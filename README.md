@@ -1,2 +1,1 @@
-# interview-preparation-kit
-Interview Preparation Kit from HackerRank
+# Interview Preparation Kit from HackerRank
