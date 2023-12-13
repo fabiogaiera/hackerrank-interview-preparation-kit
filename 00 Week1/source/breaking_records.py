@@ -29,3 +29,6 @@ def breaking_records(scores):
     lst[0] = count_max
     lst[1] = count_min
     return lst
+
+
+breaking_records([12, 24, 10, 24])
