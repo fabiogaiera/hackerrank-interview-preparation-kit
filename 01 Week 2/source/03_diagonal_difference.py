@@ -11,11 +11,9 @@ def diagonalDifference(arr):
     # left to right diagonal
     sum_left_right_diagonal = 0
     i = 0
-    j = 0
     while i <= length - 1:
-        sum_left_right_diagonal += arr[i][j]
+        sum_left_right_diagonal += arr[i][i]
         i += 1
-        j += 1
 
     # right to left diagonal
     sum_right_left_diagonal = 0
