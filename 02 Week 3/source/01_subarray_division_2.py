@@ -1,18 +1,19 @@
 def birthday(s, d, m):
-    ways = 0
-    i = 0
-    while i < len(s):
-        suma = 0
-        j = i
-        while j < m and j < len(s):
-            suma += s[j]
-            j += 1
-        if suma == d:
-            ways += 1
-        m += m
-        i = j
+    length = 0  # equal to the m
+    suma = 0
+    count = 0
+    left = 0
+    for i in range(len(s)):
+        suma += s[i]
+        length += 1
+        if length >= m:
+            if suma == d:
+                count += 1
+            suma -= s[left]
+            left += 1
+            length -= 1
 
-    return ways
+    return count
 
 
 lst = [1, 2, 1, 3, 2]
