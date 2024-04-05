@@ -15,8 +15,8 @@ def birthday(s, d, m):
     return ways
 
 
-lst = [2, 2, 1, 3, 2]
-birth_day = 4
-birth_month = 2
+lst = [1, 2, 1, 3, 2]
+birth_day = 3  # sum
+birth_month = 2  # length
 result = birthday(lst, birth_day, birth_month)
 print(result)
